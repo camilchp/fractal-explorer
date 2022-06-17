@@ -1,0 +1,18 @@
+[package]
+name = "mandelbrot"
+version = "0.1.0"
+authors = ["Jawa89 <38807412+camilchp@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num-complex = "0.4.0"
+colorscale = {path = "../colorscale"}
+rayon = "*"
+
+[dependencies.sdl2]
+version = "0.32.1"
+default-features = false
+features = ["image"]
+colorscale = {path = "../colorscale"}
